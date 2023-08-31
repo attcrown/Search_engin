@@ -36,6 +36,32 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyB7kfi3AirJy-gyZB3pDDRmOlbqy9QX9Ns',
+          authDomain: 'search-engin-2e794.firebaseapp.com',
+          projectId: 'search-engin-2e794',
+          storageBucket: 'search-engin-2e794.appspot.com',
+          messagingSenderId: '57366885814',
+          appId: '1:57366885814:web:7364da869677e7c611bd17',
+          measurementId: 'G-WKM2BRENQP',
+        },
+        services: {
+          auth: true,
+          firestore: true,
+          functions: true,
+          storage: true,
+          database: true,
+          messaging: true,
+          performance: true,
+          appCheck: true,
+          analytics: true,
+          remoteConfig: true,
+        },
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
